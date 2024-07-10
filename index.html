@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0a3b97e3e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Engineer</p>
+                <h1>Hi, I'm <span>Krishna Rana</span><br>From GEC Patan</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------About------------ -->
+    <div id="About">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.JPG">
+                </div>
+                <div class="about-col-2">
+                    
+                    <p>I am currently a fourth-year Computer Science Engineering student at Government Engineering College, Patan under Gujarat Technological University with a passion for technology and innovation. Throughout my academic journey, I have immersed myself in various facets of software development and web technologies. I have gained valuable experience through internships in both web and Java development, where I tackled real-world challenges and honed my skills. Beyond technical expertise, I am driven by a curiosity to explore new ideas and solve complex problems. As I near the completion of my degree, I am excited to channel my enthusiasm and skills into making meaningful contributions to the world of technology.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Computer skills : </span>  <br>- Java, python, HTML, CSS, JavaScript, C, MySql </li>
+                            <li><span>Soft skills : </span> <br>- Communication, Team Management, Public Speaking, 
+                                Adaptibility, Focus oriented</li>
+                            <li><span>Personal skills : </span> <br>- Compatible with any situation & task <br>
+                                - Having the ability to work under stress. <br>
+                                - Self-motivated & ambitious.
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.E. in Computer Science & Engineering :</span><br>- Completion Year : 2025 <br>
+                                - Institution: Government Engineering College , Patan <br>
+                                - CGPA: 8.52</li>
+                            <li><span>HSC (Higher Secondary Certificate) :</span><br>- Completion Year : 2021 <br>
+                                - Institution: Parth School of Science and Competition <br>
+                                - Percentage: 83.23% </li>
+                            <li><span>SSC (Secondary School Certificate) :</span><br>- Completion Year : 2021 <br>
+                                - Institution: Parth School of Science and Competition <br>
+                                - Percentage: 81.17%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development :</span><br>- Internship in Encryptix with HTML CSS JS From 27-06-2024 To 10-07-2024.</li>
+                            <li><span>Java Development :</span><br>- Internship in Oasis From 15-06-2024 To 15-07-2024.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------Services------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-lists">
+                <div>
+                    <i class="fas fa-code"></i><!--IT IS AN ICONS WITH HELP OF FONTAWESOME.COM WEBSITE-->
+                    <h2>Web Development</h2>
+                    <p>Web development involves creating websites and web applications using programming languages like HTML, CSS, and JavaScript. Developers build and maintain sites to ensure they are functional, visually appealing, and user-friendly across various devices and browsers.</p>
+                    <a href="#">Lean More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design focuses on enhancing user satisfaction by improving the usability, accessibility, and aesthetic appeal of digital interfaces. UI design pertains to the visual layout and interactive elements of a product, while UX design involves understanding user behaviors and designing intuitive experiences that meet their needs.</p>
+                    <a href="#">Lean More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design involves creating user interfaces and experiences specifically tailored for mobile applications. It focuses on intuitive navigation, seamless interaction, and visual aesthetics to optimize usability and enhance user engagement on smartphones and tablets.</p>
+                    <a href="#">Lean More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  ------Portfolio------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Attendance management system</h3>
+                        <p>Lead the team in a team project as part of the design engineering subject in the 
+                            course curriculum. Developed a prototype along with comprehensive detailed 
+                            canvas demonstrating the system's functionalities, user interface, and proposed 
+                            features. 
+                            </p>
+                        <a href="#" class="circle"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Java Mini project</h3>
+                        <p>A Java-based quiz app allowing users to participate in interactive quizzes on various topics. Features include sequential question presentation, multiple-choice answers, scoring, timer management, and feedback. Designed to demonstrate Java programming skills with a focus on user engagement and educational content delivery.
+                        </p>
+                        <a href="#" class="circle"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Portfolio page development is the creation of a personal webpage to showcase skills, projects, and experience. It involves designing a visually appealing and user-friendly site using HTML, CSS, and JavaScript, aiming to impress potential employers or clients.</p>
+                        <a href="#" class="circle"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/mrkrana1507" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------Contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact me</h1>
+            <div class="row">
+                <div class="contact-left">
+
+                    <p><i class="fas fa-paper-plane"></i>krishnarana1507@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9106615908</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100022587644470"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mr.rana_0715?igsh=MXE5cXdrM3hhbzVnZw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/krishna-rana-6aa7a22b9/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="7" placeholder="Your Message"required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Please Hit the submit button for send your response.</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Krishna. Made with <i class="fas fa-heart"></i>Focus And proper consistency</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwc81ewxIS4E6Cq_fMsu-XJo9qdwDvCYRrY4FVePfX9oxyAEpszq4wu24-EeyB7z0WM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
